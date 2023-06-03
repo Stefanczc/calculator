@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(222, 26%, 31%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: League Spartan;
+}
+.calculator_container {
+  padding: 20px;
+  width: 550px;
+}
+.info_container {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info_container > p {
+  font-size: 28px;
+}
+.datalist_container {
+  padding-bottom: 20px;
+}
+datalist {
+  width: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+option {
+  padding: 0;
+}
+.slider_container {
+  display: flex;
+  align-items: center;
+}
+.slider_container > span {
+  padding-right: 25px;
+  font-size: 12px;
+}
+/* another pseudo-element instead ? */
+.slider {
+  -webkit-appearance: none;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 15px;
+  width: 60px;
+  height: 22px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--sliderCircleColor, hsl(6, 63%, 50%));
+}
+.slider::-webkit-slider-thumb:hover {
+  background: var(--sliderCircleHover, hsl(6, 63%, 70%));
+}
+.result_container {
+  background-color: hsl(224, 36%, 15%);
+  height: 100px;
+  border-radius: 10px;
+  margin: 5px auto 25px;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 60px 30px;
+  font-size: 48px;
+}
+.buttons_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: hsl(224, 36%, 22%);
+  padding: 30px;
+  border-radius: 10px;
+}
+button {
+  border-radius: 10px;
+  height: 60px;
+  width: 80px;
+  flex-grow: 1;
+  font-size: 38px;
+  font-family: League Spartan;
+  color: hsl(221, 14%, 31%);
+  border: none;
+  box-shadow: 0 4px hsl(28, 16%, 65%);
+  background-color: hsl(30, 25%, 89%);
+}
+button:hover {
+  cursor: pointer;
+  background: var(--buttonColorHover, hsl(30, 25%, 100%));
+}
+.buttons_container button:nth-of-type(4),
+.buttons_container button:nth-of-type(17) {
+  color: white;
+  background-color: hsl(225, 21%, 49%);
+  font-size: 26px;
+  box-shadow: 0 4px hsl(224, 28%, 35%);
+}
+.buttons_container button:nth-of-type(4):hover,
+.buttons_container button:nth-of-type(17):hover {
+  background-color: hsl(225, 21%, 70%);
+}
+button:nth-of-type(18) {
+  background-color: hsl(6, 63%, 50%);
+  color: white;
+  font-size: 28px;
+  box-shadow: 0 4px hsl(25, 99%, 27%);
+}
+.buttons_container button:nth-of-type(18):hover {
+  background: var(--equalsBtnColor, hsl(6, 63%, 65%));
+}

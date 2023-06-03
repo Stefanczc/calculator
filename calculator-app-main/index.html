@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="./index.js" defer></script>
+</head>
+
+<body id="body">
+  <div class="calculator_container">
+    <div class="info_container" id="info_container">
+      <p>calc</p>
+      <div class="slider_container">
+        <span>THEME</span>
+        <div class="datalist_container">
+          <datalist id="values">
+            <option value="1" label="1"></option>
+            <option value="2" label="2"></option>
+            <option value="3" label="3"></option>
+          </datalist>
+          <input type="range" min="1" max="3" value="1" class="slider" step="1" id="slider" list="values">
+        </div>
+      </div>
+    </div>
+    <div class="result_container" id="result_container">
+      <span class="previous-operand" data-previous-operand></span>
+      <span class="current-operand" data-current-operand></span>
+    </div>
+    <div class="buttons_container" id="buttons_container">
+      <button id="seven" class="number-button">7</button>
+      <button id="eight" class="number-button">8</button>
+      <button id="nine" class="number-button">9</button>
+      <button id="delete">DEL</button>
+      <button id="four" class="number-button">4</button>
+      <button id="five" class="number-button">5</button>
+      <button id="six" class="number-button">6</button>
+      <button id="plus" class="operator">+</button>
+      <button id="one" class="number-button">1</button>
+      <button id="two" class="number-button">2</button>
+      <button id="three" class="number-button">3</button>
+      <button id="minus" class="operator">-</button>
+      <button class="number-button">.</button>
+      <button id="zero" class="number-button">0</button>
+      <button id="divide" class="operator">/</button>
+      <button id="prod" class="operator">*</button>
+      <button id="reset">RESET</button>
+      <button id="equals">=</button>
+    </div>
+  </div>
+</body>
+
+</html>

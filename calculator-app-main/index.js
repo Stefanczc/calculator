@@ -280,7 +280,6 @@ $('.slider').on('change', function () {
 
 // Numbers
 const allNumberButtons = document.getElementsByClassName('number-button');
-console.log(allNumberButtons);
 
 // Operators
 const allOperators = document.getElementsByClassName('operator');

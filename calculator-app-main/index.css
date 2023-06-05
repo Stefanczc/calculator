@@ -14,7 +14,7 @@ body {
 }
 .calculator_container {
   padding: 20px;
-  width: 550px;
+  max-width: 550px;
 }
 .info_container {
   color: hsl(0, 0%, 100%);
